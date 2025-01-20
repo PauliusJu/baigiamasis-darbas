@@ -11,6 +11,15 @@ router.get('/', async (req, res) => {
     }
 });
 
+router.get('/sorted', async (req, res) => {
+    try {
+        const sortedAccounts = await Account.find().sort({ lastName: 1 }); 
+        res.json(sortedAccounts);
+    } catch {
+        res.status(500).json('Įvyko serverio klaida');
+    }
+});
+
 router.get('/:id', async (req, res) => {
     try {
         res.json(await Account.findById(req.params.id));
