@@ -1,4 +1,5 @@
 Virtual Bank
+
 Sveiki atvykę į Virtual Bank – modernią platformą, kuri leidžia efektyviai valdyti savo finansus. Šis projektas sukurtas su dėmesiu intuityviam dizainui, greičiui ir saugumui.
 
 📌 Projekto funkcijos
